@@ -1,0 +1,29 @@
+git的使用
+    1.安装
+        默认安装
+    
+    所有的git命令都是以git开头的
+    2.用户信息的配置
+    git config --global user.name "用户名"
+    git config --global user.email "邮箱"
+    全局配置,只需要配置一次即可,除非卸载或重装系统
+
+    3.初始化本地仓库
+    git init
+    将当前所在文件夹初始化为本地仓库
+    此时,会自动生成一个.git的隐藏文件夹,这就是本地仓库(不要动他)
+
+    4.查看仓库的状态
+    git status 
+
+        git的四种状态
+            untracked:新建的文件,但是还没有提交过,没有纳入到git的控制中
+            staged:
+            unmodfied:
+            modified:
+    
+    5.提交
+        1)git add
+            将指定文件提交到暂停区域
+
+

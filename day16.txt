@@ -19,8 +19,8 @@ git的使用
         git的四种状态
             untracked:新建的文件,但是还没有提交过,没有纳入到git的控制中
             staged: 执行到git add命令,提交到暂存区
-            unmodfied:
-            modified:
+            unmodfied:执行过git commit命令 工作区的文件没有任何修改，不需要提交
+            modified:工作区的有修改，还没有执行git add暂存操作
     
     5.提交
         1)git add

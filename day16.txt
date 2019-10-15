@@ -18,12 +18,16 @@ git的使用
 
         git的四种状态
             untracked:新建的文件,但是还没有提交过,没有纳入到git的控制中
-            staged:
+            staged: 执行到git add命令,提交到暂存区
             unmodfied:
             modified:
     
     5.提交
         1)git add
-            将指定文件提交到暂停区域
+            将指定文件提交到暂存区
+        2)git commit -m "提交的信息"
+            将暂存区的内容全部提交到master上
+    
+    6.查看提交的信息
 
 

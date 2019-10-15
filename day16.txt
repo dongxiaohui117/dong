@@ -20,6 +20,7 @@ git的使用
             untracked:新建的文件,但是还没有提交过,没有纳入到git的控制中
             staged: 执行到git add命令,提交到暂存区
             unmodfied:执行过git commit命令 工作区的文件没有任何修改，不需要提交
+                不需要提交（nothing to commit,working tree clean）
             modified:工作区的有修改，还没有执行git add暂存操作
     
     5.提交
@@ -29,5 +30,5 @@ git的使用
             将暂存区的内容全部提交到master上
     
     6.查看提交的信息
-
+        git log
 

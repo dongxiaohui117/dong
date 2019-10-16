@@ -31,6 +31,8 @@ git的使用
     
     6.查看提交的信息
         git log
+
+        git log --pretty=oneline
     
     7.撤销修改
         1）撤销工作区的修改
@@ -48,3 +50,65 @@ git的使用
 
             git reset --hard 提交的id
             id不需要写完整，一般只需要写前6位即可
+    git status 会忽略空文件夹
+    git add -A 会自动缓存所有修改内容到缓存区，也会忽略空文件夹
+
+    HEAD
+        就是一个存盘点，实现版本的控制
+        git将每一次的提交传承一条时间线，这条时间线就是一条分支，默认只有一条分支，master也称之为主分支
+        而HEAD指向就是当前分支
+    
+    8.创建分支
+        git branch 分支名称
+        创建一条新的分支，新分支的内容就是当前分支的内容
+    
+    9.查看当前仓库有哪些分支
+        git branch
+        前面有*号的表示当前所在的分支
+    
+    10.切换分支
+        git checkout 分支名称
+        切换到指定名称的分支上去
+        此时，HEAD的指向夜壶发生改变（切换到的那个分支）
+        在一条分支上的修改不会影响到其他分支上的数据
+
+    11.合并分支
+        git merge 分支名称
+        将指定名称分支上修改的内容合并到当前分支
+    
+    12.删除分支
+        git branch -d  分支名
+        如果被删除的分支没有合并,则删除失败
+        可以使用
+        git branch -D 分支名 来强制删除
+
+gitHub的使用
+    1.注册
+    www.github.com
+
+    2.创建远程仓库
+        点击右上角加号+,new repository
+        在repository name中填写远程仓库的名称
+        description可以不写,表示仓库的描述
+        public与private选中public
+        readme不要勾选
+        点击create repository
+
+    3.将远程仓库与本地仓库关联
+        git remote add origin 远程仓库的url地址
+        git remote 固定语法
+        add 添加关联
+        origin 表示关联的名称,指代后面的那个url地址
+
+    4.将本地仓库的内容推送到远程仓库去
+        git push -u origin master
+        git push 固定语法
+        -u 只在第一次推送的时候添加,以后就不需要了
+        origin 代表关联时,远程仓库的url地址
+        master 代表推送的分支
+
+    5.查看当前仓库的所有关联
+        git remote
+
+    6.删除远程仓库的关联
+        git remote remove 关联的名称
